@@ -24,7 +24,7 @@ struct ContentView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @FocusState private var textFieldIsFocused: Bool
     
-    private let wordsToGuess = ["DOG", "CUTE", "HUGS"]
+    private let wordsToGuess = ["DOG", "CUTE", "HUGS", "CAT", "APPLE", "ORANGE", "PANDA", "BANANA", "STARFISH", "DISCO", "SPOON", "BUNNY", "CATERPILLAR", "CHEESE", "MOUSE", "COW", "SHEEP", "GIRAFFE", "CROSSROADS", "TRAIN", "AIRPLANE", "ELEPHANT", "BUTTERFLY", "ANT", "OCTOPUS", "FOOD", "MUFFIN", "GARDEN", "FLOWER", "DOLPHIN", "LIPSTICK", "BIRTHDAY", "GORILLA", "POTATO", "WEIGHT", "RESTAURANT", "FLY", "BURRITO", "ICE", "CREAM", "MEDAL", "WINNER", "HAPPY", "PERSON", "CROWD", "ACCENT", "WHALE", "WEATHER", "SUNLIGHT", "PHOTOSYNTHESIS", "ABSORB", "WORM", "GRASS", "PLANT", "TREEHOUSE"]
     private let maximumGuesses = 8
     
     var body: some View {
@@ -52,7 +52,6 @@ struct ContentView: View {
             
             Spacer()
             
-            //TODO: switch to wordsToGuess[currentWOrd]
             Text(revealedWord)
                 .font(.title)
             
